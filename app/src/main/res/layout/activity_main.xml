@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- He elegido linearLayout ya que me resulta mas fácil a la hora de colocar todos los objetos
+    ya que estoy mas acostumbrado a editar mediante código y no a través del ratón y no me acaba de
+    gustar como esta hecho el ir moviendo los objetos en la pantalla ya que a veces no se
+    quedan esactamente alineadas-->
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:gravity="center"
+            android:text="@string/nombre"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="@string/nombre"
+            android:gravity="center"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/apellidos"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/txtApellidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="@string/apellidos"
+            android:gravity="center"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/vehiculo"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerVehiculo"
+            style="@style/Separacion_Horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1.5">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/combustible"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <RadioGroup
+            android:id="@+id/rGpCombustible"
+            style="@style/Separacion_Horizontal"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/diesel"
+                style="@style/Radio_Buttons"
+                android:text="@string/diesel"
+                android:onClick="radioButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/gasolina"
+                style="@style/Radio_Buttons"
+                android:text="@string/gasolina"
+                android:onClick="radioButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/electrico"
+                style="@style/Radio_Buttons"
+                android:text="@string/electrico"
+                android:onClick="radioButtonClick"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/gps"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <CheckBox
+            android:id="@+id/gps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="@string/si"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/introduzca_los_dias_a_alquilar"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/dias"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="@string/dias"
+            android:gravity="center"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="@string/precio_total"
+            android:gravity="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/precioTotal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="@string/precio_total"
+            android:gravity="center"/>
+
+        <LinearLayout
+            style="@style/Separacion_Horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/botonAlquilar"
+                style="@style/button_style"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="@string/alquilar"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

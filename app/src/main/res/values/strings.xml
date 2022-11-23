@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">FronteraVictor_EnterTheCar</string>
+    <string name="titulo_app" translatable="false">Enter The Car</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="vehiculo">Vehículo</string>
+    <string name="gps" translatable="false">GPS</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="alquilar">Alquilar</string>
+    <string name="introduzca_los_dias_a_alquilar">Introduzca los días a alquilar</string>
+    <string name="dias">Días</string>
+    <string name="combustible">Combustible</string>
+    <string name="precio_total">Precio total</string>
+    <string name="diesel">Diésel 25€/dia</string>
+    <string name="gasolina">Gasolina 20€/dia</string>
+    <string name="electrico">Eléctrico 15€/dia</string>
+    <string name="dieselSinPrecio">Diésel</string>
+    <string name="gasolinaSinPrecio">Gasolina</string>
+    <string name="electricoSinPrecio">Eléctrico</string>
+    <string name="noDisponible">No disponible</string>
+    <string name="pagar">Pagar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="turismo">Turismo</string>
+    <string name="moto">Moto 10€/dia</string>
+    <string name="moto_Sin_Precio">Moto</string>
+    <string name="patinete_Sin_Precio">Patinete</string>
+    <string name="patinete">Patinete 5€/dia</string>
+    <string name="dia">dia</string>
+    <string name="fecha_de_caducidad">Fecha de caducidad</string>
+    <string name="numero_tarjeta">Numero tarjeta</string>
+    <string name="numero_de_la_tarjeta">Numero de la tarjeta</string>
+    <string name="visa" translatable="false">VISA</string>
+    <string name="mastercard" translatable="false">MasterCard</string>
+    <string name="euro6000" translatable="false">Euro 6000</string>
+    <string name="enviar">Enviar</string>
+    <string name="tarjeta">Tarjeta</string>
+    <string name="tipo_tarjeta">Tipo tarjeta</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="justificanteCorreo">Justificante de pago de </string>
+    <string name="tipoTarjetaCorreo">Tipo tarjeta: </string>
+    <string name="numeroTarjetaCorreo">Numero tarjeta: </string>
+    <string name="fechaCaducidadCorreo">Fecha caducidad: </string>
+    <string name="vehiculoCorreo">Vehiculo: </string>
+    <string name="combustibleCorreo">Combustible: </string>
+    <string name="gpsCorreo" translatable="false">GPS: </string>
+    <string name="diasCorreo">Dias: </string>
+    <string name="precioTotalCorreo">Precio total: </string>
+    <string name="pagoRealizado">Pago realizado</string>
+    <string-array name="arrayVehiculos">
+        <item>@string/turismo</item>
+        <item>@string/moto</item>
+        <item>@string/patinete</item>
+    </string-array>
+    <string-array name="arrayTarjetas">
+        <item>@string/visa</item>
+        <item>@string/mastercard</item>
+        <item>@string/euro6000</item>
+    </string-array>
+</resources>

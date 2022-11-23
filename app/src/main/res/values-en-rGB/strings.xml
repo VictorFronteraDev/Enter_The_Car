@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre">Name</string>
+    <string name="apellidos">Surname</string>
+    <string name="vehiculo">Vehicle</string>
+    <string name="turismo">Car</string>
+    <string name="si">Yes</string>
+    <string name="alquilar">Rent</string>
+    <string name="introduzca_los_dias_a_alquilar">Enter the days to rent</string>
+    <string name="dias">Days</string>
+    <string name="combustible">Fuel</string>
+    <string name="precio_total">Total price</string>
+    <string name="no">No</string>
+    <string name="diesel">Diesel 25€/day</string>
+    <string name="gasolina">Gasoline 20€/day</string>
+    <string name="electrico">Electric 15€/day</string>
+    <string name="dieselSinPrecio">Diesel</string>
+    <string name="gasolinaSinPrecio">Gasoline</string>
+    <string name="electricoSinPrecio">Electric</string>
+    <string name="noDisponible">Not available</string>
+    <string name="pagar">Pay</string>
+    <string name="cancelar">Cancel</string>
+    <string name="moto">Motorbike 10€/day</string>
+    <string name="moto_Sin_Precio">Motorbike</string>
+    <string name="patinete_Sin_Precio">Scooter</string>
+    <string name="patinete">Scooter 5€/day</string>
+    <string name="dia">day</string>
+    <string name="fecha_de_caducidad">Date of expiry</string>
+    <string name="numero_tarjeta">Card number</string>
+    <string name="numero_de_la_tarjeta">Card number</string>
+    <string name="enviar">Send</string>
+    <string name="tarjeta">Card</string>
+    <string name="tipo_tarjeta">Card type</string>
+    <string name="aceptar">Accept</string>
+    <string name="justificanteCorreo">Proof of payment of</string>
+    <string name="tipoTarjetaCorreo">Card type:</string>
+    <string name="numeroTarjetaCorreo">Card number:</string>
+    <string name="fechaCaducidadCorreo">Date of expiry:</string>
+    <string name="vehiculoCorreo">Car:</string>
+    <string name="combustibleCorreo">Fuel:</string>
+    <string name="diasCorreo">Days:</string>
+    <string name="precioTotalCorreo">Total price:</string>
+    <string name="pagoRealizado">Payment made</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FormularioPago">
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="Tipo de tarjeta"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinnerTarjeta"
+            style="@style/Separacion_Horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/numero_de_la_tarjeta"
+            android:textSize="18dp"
+            android:gravity="center" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/numeroTarjeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="0000 0000 0000 0000"
+            android:gravity="center"
+            android:maxLength="19"
+            android:inputType="number"
+            app:mask="#### #### #### ####"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:textSize="18dp"
+            android:text="@string/fecha_de_caducidad"
+            android:gravity="center"/>
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/fechaCaducidad"
+            style="@style/Separacion_Horizontal"
+            android:hint="00/00"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            app:mask="##/##"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/botonEnviar"
+            style="@style/button_style"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/enviar"/>
+    </LinearLayout>
+</LinearLayout>

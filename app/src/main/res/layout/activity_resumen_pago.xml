@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResumenPago">
+    
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+        
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/tarjeta"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tipoTarjeta"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/tipo_tarjeta"
+            android:textSize="18dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/numero_de_la_tarjeta"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/numeroTarjeta"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/numero_tarjeta"
+            android:textSize="18dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/fecha_de_caducidad"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/fechaCaducidad"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/fecha_de_caducidad"
+            android:textSize="18dp"
+
+            android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/Separacion_Vertical"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:gravity="center">
+            <Button
+                android:id="@+id/botonAceptar"
+                style="@style/button_style"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="@string/aceptar"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Separacion_Horizontal"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/white"
+                app:tint="@color/black"
+                android:src="@drawable/enviar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

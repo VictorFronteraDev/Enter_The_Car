@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/recyclerNombreApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Nombre y apellidos"
+            />
+        <TextView
+            android:id="@+id/recyclerVechiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Vehiculo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/recyclerDiasAlquilado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Dias Alquilado"
+            />
+        <TextView
+            android:id="@+id/recyclerPrecioTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Precio total"/>
+
+    </LinearLayout>
+</LinearLayout>

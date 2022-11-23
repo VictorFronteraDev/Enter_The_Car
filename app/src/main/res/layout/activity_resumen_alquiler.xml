@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResumenAlquiler">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/nombre"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/nombre"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/apellidos"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/apellidos"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/apellidos"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/vehiculo"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/vehiculo"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/vehiculo"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/combustible"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/combustible"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/combustible"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/gps"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/gps"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/gps"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/dias"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/dias"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/dias"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            style="@style/Separacion_Horizontal"
+            android:text="@string/precio_total"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/precioTotalResumen"
+            style="@style/Separacion_Horizontal"
+            android:hint="@string/precio_total"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <LinearLayout
+            style="@style/Separacion_Horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/botonCancelar"
+                style="@style/button_style"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="@string/cancelar"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Separacion_Horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/botonPagar"
+                style="@style/button_style"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="@string/pagar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
